@@ -1,0 +1,385 @@
+/* Capa */
+
+.personagens-main {
+  display: flex;
+  height: 40vh;
+  text-align: center;
+  background: url("../img/personagen_capa.jpeg") no-repeat center;
+  padding: 200px 0;
+}
+
+.personagens-main h1 {
+  font-size: 2.25em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 50px;
+}
+
+/* Seções */
+
+.section {
+  margin-top: 20px;
+  padding: 10px 10px 0 10px;
+}
+
+.section h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  letter-spacing: 0.1em;
+  margin-bottom: 15px;
+}
+
+.section h3 {
+  font-size: 1.125em;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.section p {
+  font-size: 1em;
+  text-align: justify;
+  text-indent: 10%;
+}
+
+.constelattion {
+  padding: 10px 0;
+}
+
+.divisor::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #252525;
+  margin: 20px auto 0 auto;
+}
+
+/* Tabela */
+
+.table {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  margin-top: 40px;
+  text-align: center;
+  flex-direction: column;
+  background: #e0e0e0;
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.table a {
+  color: #252525;
+  text-decoration: none;
+}
+.table a:hover {
+  color: #fff;
+}
+
+.table h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 10px 10px 0 10px;
+}
+
+.table-box {
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  border-collapse: collapse;
+}
+
+.table-box::before,
+.table-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table-box th {
+  line-height: 65px;
+  border-bottom: 1px solid #000;
+}
+
+.table-box td {
+  height: auto;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+}
+
+.table-box img {
+  width: auto;
+  vertical-align: middle;
+}
+
+.table-float {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.table-float table {
+  margin: 0 10px;
+}
+
+.table-float table th {
+  border: none;
+}
+
+.table-float table td {
+  padding-top: 5px;
+}
+
+.pyro::before,
+.hydro::before,
+.anemo::before,
+.electro::before,
+.dendro::before,
+.cryo::before,
+.geo::before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  position: relative;
+  vertical-align: middle;
+  background-image: url("../img/personagens/elementos_icone.png");
+}
+
+.pyro::before {
+  background-position: 0 0;
+  right: 8%;
+}
+
+.hydro::before {
+  background-position: 0 -42px;
+  right: 4%;
+}
+
+.anemo::before {
+  background-position: 0 calc(-42px * 2);
+  right: 3%;
+}
+
+.electro::before {
+  background-position: 0 calc(-42px * 3);
+  right: 3%;
+}
+
+.dendro::before {
+  background-position: 0 calc(-42px * 4);
+  right: 5%;
+}
+
+.cryo::before {
+  background-position: 0 calc(-42px * 5);
+  right: 8%;
+}
+
+.geo::before {
+  background-position: 0 calc(-42px * 6);
+  right: 10%;
+}
+
+@media (max-width: 739px) {
+  .section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section h2 {
+    font-size: 1.125em;
+  }
+  .section h3 {
+    font-size: 1em;
+  }
+  .table {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: auto;
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .table-box {
+    padding: 0;
+  }
+  .table-box tr th:nth-of-type(5),
+  .table-box tr td:nth-of-type(5),
+  .table-box tr th:nth-of-type(6),
+  .table-box tr td:nth-of-type(6) {
+    visibility: hidden;
+    max-width: 0;
+    overflow: hidden;
+  }
+
+  .pyro::before,
+  .hydro::before,
+  .anemo::before,
+  .electro::before,
+  .dendro::before,
+  .cryo::before,
+  .geo::before {
+    display: block;
+    right: -25%;
+  }
+}
+
+/*--------------------------------------------- Personagem Card --------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+
+.main-card {
+  display: flex;
+  flex: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 75px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-card h1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 70%;
+  padding: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #fff;
+  text-shadow: 1px 1px #252525;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+}
+
+.card-img {
+  width: 30%;
+  border: 3px solid #252525;
+  border-right: none;
+  border-bottom-left-radius: 4px;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: left;
+  line-height: 200%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 3px solid #252525;
+  border-bottom-right-radius: 4px;
+}
+
+.card-description img {
+  width: 12%;
+  margin-top: 10px;
+}
+
+.card-perfil {
+  text-align: justify;
+  margin: auto 0 0 0;
+}
+
+.card-perfil p:nth-child(2) {
+  text-indent: 5%;
+}
+
+/* -------------Cores icones------------ */
+.pyro-e h1 {
+  background: #fe925d;
+}
+.pyro-e {
+  border-color: #fe925d;
+}
+.hydro-e h1 {
+  background: #21e1eb;
+}
+.hydro-e {
+  border-color: #21e1eb;
+}
+.anemo-e h1 {
+  background: #72e2c3;
+}
+.anemo-e {
+  border-color: #72e2c3;
+}
+.electro-e h1 {
+  background: #a757cb;
+}
+.electro-e {
+  border-color: #a757cb;
+}
+.dendro-e h1 {
+  background: #23c18a;
+}
+.dendro-e {
+  border-color: #23c18a;
+}
+.cryo-e h1 {
+  background: #a0e9e5;
+}
+.cryo-e {
+  border-color: #a0e9e5;
+}
+.geo-e h1 {
+  background: #e3b342;
+}
+.geo-e {
+  border-color: #e3b342;
+}
+
+.pyro-i::after,
+.hydro-i::after,
+.anemo-i::after,
+.electro-i::after,
+.dendro-i::after,
+.cryo-i::after,
+.geo-i::after {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  position: relative;
+  background-image: url("../img/personagens/elementos_icone.png");
+}
+.pyro-i::after {
+  background-position: 0 0;
+}
+.hydro-i::after {
+  background-position: 0 -42px;
+}
+.anemo-i::after {
+  background-position: 0 calc(-42px * 2);
+}
+.electro-i::after {
+  background-position: 0 calc(-42px * 3);
+}
+.dendro-i::after {
+  background-position: 0 calc(-42px * 4);
+}
+.cryo-i::after {
+  background-position: 0 calc(-42px * 5);
+}
+.geo-i::after {
+  background-position: 0 calc(-42px * 6);
+}

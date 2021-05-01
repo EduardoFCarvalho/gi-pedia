@@ -1,0 +1,11 @@
+{
+  "name": "gi-pedia",
+  "version": "1.0.0",
+  "description": "Biblioteca Genshin",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EduardoFCarvalho",
+  "license": "ISC"
+}

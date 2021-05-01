@@ -1,0 +1,231 @@
+/* Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  background: #1b1b1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/* Geral */
+
+.container-box {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.construcao {
+  display: flex;
+  flex: 1;
+  height: 75vh;
+}
+.construcao div {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+  padding-top: 8%;
+}
+.construcao img {
+  max-width: 50%;
+  max-height: 50%;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+/* Intro --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
+
+.intro-cover {
+  display: flex;
+  height: 50vh;
+  padding-top: 70.14px;
+  padding-bottom: 20px;
+  background-image: url("../img/capa-index.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-cover h1 {
+  font-size: 2.625rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+  margin-top: 40px;
+}
+
+.intro h1 {
+  font-size: 2.25em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.intro p {
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: justify;
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+}
+
+.intro a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #252525;
+}
+
+.intro::after,
+.intro::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.link-externo {
+  display: flex;
+  margin: 30px 0 10px 0;
+  justify-content: center;
+}
+
+.link-externo a {
+  color: #fff;
+}
+
+.link-externo::after,
+.link-externo::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* No momento não precisei mexer no .wo e .no direto só after e before */
+.wo::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background: #fff;
+  margin-left: 10px;
+}
+
+.no::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background: #fff;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .container-box {
+    width: 100%;
+    border-radius: 5px;
+    background: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .intro {
+    margin-top: 20px;
+  }
+  .intro p {
+    max-width: auto;
+    padding: 0px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  .intro a {
+    font-size: 1rem;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: #40c6bb;
+  margin-top: 40px;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  max-width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.footer-box img {
+  width: 80%;
+}
+
+.footer-contato {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-self: center;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #252525;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  background: #252525;
+  font-size: 1em;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-top: 20px;
+  }
+  .footer-box {
+    max-width: 300px;
+  }
+  .footer-box img {
+    width: 60%;
+  }
+  .footer-contato {
+    font-size: 1rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+  }
+}

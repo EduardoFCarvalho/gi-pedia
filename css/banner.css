@@ -1,0 +1,45 @@
+.banner-main {
+  /* background: #40c6bb; <= Cor utilizada anteriormente */
+  background: #333;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.banner-main h2 {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.banner :nth-child(3) {
+  position: relative;
+  right: -25%;
+}
+
+.banner div {
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 1.125rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .banner-main {
+    margin-top: 20px;
+  }
+  .banner-main h2 {
+    font-size: 1.125rem;
+  }
+  .banner :nth-child(3) {
+    position: static;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+}
