@@ -1,6 +1,7 @@
 .personagens-main {
   display: block;
   background: url("../img/personagen_capa.jpeg") no-repeat center;
+  background-size: cover;
   width: 100%;
   height: 50vh;
   text-align: center;
