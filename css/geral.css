@@ -67,6 +67,7 @@ img {
   background-image: url("../img/capa-index.png");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   justify-content: center;
   align-items: center;
 }
@@ -170,6 +171,39 @@ img {
   }
   .intro a {
     font-size: 1rem;
+  }
+}
+
+/* Intro Itens --------------------------------------------------------------------------------- */
+/* Intro Itens --------------------------------------------------------------------------------- */
+
+.intro-itens {
+  display: flex;
+  height: 50vh;
+  padding-top: 70.14px;
+  padding-bottom: 20px;
+  background: url("../img/itens_capa.jpg") no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-itens h1 {
+  font-size: 2.625rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  .intro-itens {
+    height: 35vh;
+  }
+
+  .intro-itens h1 {
+    font-size: 2rem;
   }
 }
 
