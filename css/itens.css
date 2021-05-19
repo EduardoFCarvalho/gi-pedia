@@ -1,0 +1,71 @@
+/* Titulo da página das armas */
+.weapon-tittle {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 4px;
+  background: #333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weapon-tittle h1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.weapon-tittle nav {
+  display: flex;
+  margin: 0 10px;
+}
+.weapon-tittle nav p {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+/* definições das seções */
+.weapon-attribute {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.weapon-attribute img {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.weapon-attribute h3 {
+  color: goldenrod;
+  width: 160px;
+  margin-right: 15px;
+  text-align: left;
+}
+
+.weapon-attribute p {
+  margin-right: 10px;
+}
+
+.weapon-attribute div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+.weapon-attribute div:last-child {
+  width: 100%;
+  justify-content: center;
+}
+
+.weapon-attribute table {
+  background: gray; /* MUDAR DEPOIS, ESSE É APENAS PARA REFERENCIA */
+  border-radius: 4px;
+  width: 80%;
+}
+.weapon-attribute table th {
+  padding: 0 8%;
+}
