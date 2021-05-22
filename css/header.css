@@ -13,7 +13,7 @@
 }
 
 .menu-logo {
-  flex: 1;
+  flex: 0.7;
   margin-right: 10px;
 }
 
@@ -53,7 +53,7 @@
     padding: 0;
   }
   .menu-logo {
-    margin: 0 40%;
+    margin: 0 42.5%;
   }
   .menu-logo img {
     width: 100%;
