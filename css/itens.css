@@ -5,6 +5,10 @@
   margin-bottom: 40px;
 }
 
+.eqp-section h2 {
+  color: goldenrod;
+}
+
 /* Titulo da página das armas */
 .weapon-tittle {
   display: flex;
@@ -101,4 +105,11 @@
   text-align: justify;
   text-indent: 5%;
   padding-left: 10px;
+}
+
+.weapon-attribute th {
+  color: wheat;
+}
+.weapon-attribute td {
+  color: whitesmoke;
 }
