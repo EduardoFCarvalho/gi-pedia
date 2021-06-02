@@ -1,21 +1,35 @@
 .personagens-main {
   display: block;
-  background: url("../img/personagen_capa.jpeg") no-repeat center;
-  background-size: cover;
+
   width: 100%;
   height: 50vh;
   text-align: center;
 }
 
 .personagens-main h1 {
+  color: #f0e68c;
   font-size: 2.625rem;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
-  color: #fff;
   position: relative;
+  z-index: 2;
   top: 50%;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.personagens-main::before {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  background: url("../img/personagen_capa.jpeg") no-repeat center;
+  background-size: cover;
+  opacity: 0.8;
 }
 
 @media (max-width: 767px) {
@@ -26,71 +40,8 @@
   .personagens-main h1 {
     font-size: 2rem;
   }
-}
-
-/* Seções */
-
-.section {
-  margin-top: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  letter-spacing: 0.1rem;
-  margin-bottom: 15px;
-}
-
-.section h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  letter-spacing: 0.1rem;
-}
-
-.section p {
-  font-size: 1.125rem;
-  text-align: justify;
-  text-indent: 10%;
-  margin-top: 10px;
-}
-
-/* .constelattion {
-  padding: 10px 0;
-} */
-
-.divisor::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: #252525;
-  margin: 20px auto 0 auto;
-}
-
-@media (max-width: 767px) {
-  .section {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .section h2 {
-    font-size: 1.125rem;
-    padding-bottom: 5px;
-  }
-  .section h3 {
-    font-size: 1rem;
-  }
-  .section p {
-    font-size: 1rem;
+  .personagens-main::before {
+    height: 35%;
   }
 }
 
@@ -99,14 +50,13 @@
 
 .table {
   display: flex;
-  /* max-width: 960px; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 10px;
   text-align: center;
   flex-direction: column;
-  background: #484f4f;
+  background: #778899;
   border-radius: 5px;
   padding-right: 10px;
   padding-left: 10px;

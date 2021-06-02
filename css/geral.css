@@ -11,9 +11,9 @@ ul {
 
 body {
   font-size: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #fff;
-  background: #1b1b1b;
+  background: #363636;
 }
 
 * {
@@ -24,7 +24,7 @@ img {
   width: 100%;
 }
 
-/* Geral */
+/* Geral -------------------------------------------------------------------------------------*/
 
 .container-box {
   width: 80%;
@@ -32,7 +32,7 @@ img {
   margin: 0 auto;
   text-align: center;
   border-radius: 5px;
-  background: #333;
+  background: #4f4f4f;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -56,6 +56,79 @@ img {
   border-radius: 10px;
 }
 
+.section {
+  margin-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #f0e68c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+}
+
+.section h3 {
+  color: #f0e68c;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.section p {
+  font-size: 1.125rem;
+  text-align: justify;
+  text-indent: 10%;
+  margin-top: 10px;
+}
+
+.section a {
+  color: #daa520;
+  text-decoration: none;
+}
+
+.divisor::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #252525;
+  margin: 20px auto 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container-box {
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section h2 {
+    font-size: 1.125rem;
+    padding-bottom: 5px;
+  }
+  .section h3 {
+    font-size: 1rem;
+  }
+  .section p {
+    font-size: 1rem;
+  }
+}
+
 /* Intro --------------------------------------------------------------------------------------*/
 /* --------------------------------------------------------------------------------------------*/
 
@@ -64,21 +137,36 @@ img {
   height: 50vh;
   padding-top: 70.14px;
   padding-bottom: 20px;
-  background-image: url("../img/capa-index.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
   justify-content: center;
   align-items: center;
 }
 
 .intro-cover h1 {
+  color: #f0e68c;
   font-size: 2.625rem;
   font-weight: bold;
   font-style: italic;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.intro-cover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  opacity: 0.5;
+  background-image: url("../img/capa-index.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 .intro {
@@ -153,13 +241,6 @@ img {
 }
 
 @media (max-width: 767px) {
-  .container-box {
-    width: 100%;
-    border-radius: 5px;
-    background: #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
   .intro {
     margin-top: 20px;
   }
@@ -171,39 +252,6 @@ img {
   }
   .intro a {
     font-size: 1rem;
-  }
-}
-
-/* Intro Itens --------------------------------------------------------------------------------- */
-/* Intro Itens --------------------------------------------------------------------------------- */
-
-.intro-itens {
-  display: flex;
-  height: 50vh;
-  padding-top: 70.14px;
-  padding-bottom: 20px;
-  background: url("../img/itens_capa.jpg") no-repeat center;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro-itens h1 {
-  font-size: 2.625rem;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 767px) {
-  .intro-itens {
-    height: 35vh;
-  }
-
-  .intro-itens h1 {
-    font-size: 2rem;
   }
 }
 

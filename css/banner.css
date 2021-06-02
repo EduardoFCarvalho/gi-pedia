@@ -1,13 +1,13 @@
 .banner-main {
-  /* background: #40c6bb; <= Cor utilizada anteriormente */
-  background: #333;
+  background: #4f4f4f;
   text-align: center;
   margin-top: 40px;
   padding-bottom: 10px;
 }
 
 .banner-main h2 {
-  font-size: 1.5rem;
+  color: #f0e68c;
+  font-size: 1.75rem;
   padding: 10px 0;
   margin-bottom: 10px;
   font-style: italic;
