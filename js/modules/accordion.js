@@ -1,20 +1,16 @@
-export default function initAccordion() {}
-const accordionList = document.querySelectorAll(".js-accordion h3");
-const descriptions = document.querySelectorAll(
-  ".js-accordion .weapon-attribute div:nth-child(2)"
-);
-const arrayAccordionList = Array.from(accordionList);
-const arrayDescriptions = Array.from(descriptions);
+export default function initAccordion() {
+  const accordionList = document.querySelectorAll(".js-accordion h3");
+  const arrayAccordionList = Array.from(accordionList);
+  let i;
 
-function activeAccordion(arrayAccordionList, arrayDescriptions) {
-  if (arrayAccordionList.length != arrayDescriptions.length) {
-    return false;
+  function activeAccordion() {
+    this.classList.toggle("ativo");
+    this.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.toggle(
+      "ativo"
+    );
   }
-  return arrayDescriptions.every(
-    (value, index) => value === arrayAccordionList[index]
-  );
-}
 
-arrayAccordionList.map((item, index) => {
-  item.addEventListener("click", activeAccordion);
-});
+  for (i = 0; i < arrayAccordionList.length; i++) {
+    arrayAccordionList[i].addEventListener("click", activeAccordion);
+  }
+}

@@ -140,6 +140,7 @@
 /* definições das seções */
 .weapon-attribute {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   padding: 0 10px;
@@ -153,23 +154,31 @@
 
 .weapon-attribute h3 {
   color: #f0e68c;
-  width: 160px;
+  width: 180px;
   margin-right: 15px;
-  text-align: center;
+  text-align: start;
 }
 
 .weapon-attribute p {
   margin-right: 10px;
 }
 
-.weapon-attribute div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 5px;
-}
-.weapon-attribute div:last-child {
+.weapon-box {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.weapon-box .descricao {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.descricao {
   justify-content: center;
 }
 
@@ -209,9 +218,49 @@
   color: white;
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 @media (max-width: 767px) {
   .weapon-attribute table {
     width: 100%;
+  }
+}
+
+.js-accordion .descricao {
+  display: none;
+}
+
+.js-accordion h3::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f0e68c;
+}
+.js-accordion h3.ativo::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f0e68c;
+  border-top: none;
+}
+
+.js-accordion .descricao.ativo {
+  display: flex;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
